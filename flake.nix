@@ -9,7 +9,7 @@
       systems = [ "x86_64-linux" "aarch64-darwin" ];
       perSystem = { pkgs, ... }:{
         devenv.shells.default = {
-          # packages = with pkgs; [ zlib haskellPackages.hoogle haskell-language-server ];
+          packages = with pkgs; [ haskellPackages.alex ];
           languages.haskell.enable = true;
         };
       };
